@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ryan Harper | Web Developer</title>
+        <link href="style.css" rel="stylesheet"/>
+        <link rel="shortcut icon" href="favicon.png">
+    </head>
+
+    <body>
+        <div class="background-gradient"></div>
+        <div class="sky">
+            <div class="stars"></div>
+            <div class="stars1"></div>
+            <div class="moving-stars"></div>
+        </div>
+
+        <div class="nav">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+        <div class="mobile-nav">
+            <div class="menu-icon" onclick="openMenu(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <div class="mobile-menu" id="mobMenu">
+                <div class="cont">
+                    <a href="#home" class="active" id="top">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+
+        <input id="downButton" type="image" src="img/down-arrow.png" alt="down" class="down-button" />
+
+        <div class="container">
+
+            <div class="home check" id="home">
+                <div class="home-text">
+                    <h1 class="home-head1">Hello, I'm Ryan.</h1>
+                    <h2 class="home-head2">This is my web development portfolio.</h1>
+                </div>
+            </div>
+
+            <div class="about check" id="about">
+                <div class="about-text">
+                    <h3 class="abt-head">About</h3>
+                    <p class="abt-text">I make website</p>
+                </div>
+            </div>
+
+            <div class="projects check" id="projects">
+                <div class="projects-text">
+                    <h3 class="proj-head">Projects</h3>
+                    <p class="proj-text">here is my websites</p>
+                </div>
+            </div>
+
+            <div class="contact check" id="contact">
+                <div class="contact-text">
+                    <h3 class="contact-head">Contact</h3>
+                    <p class="contact-text">message me if u want a website</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer">
+            <div class="inner-footer">
+                <a href="https://github.com/chunglescode"><img src="img/github.png"></a>
+                <p>Ryan  Harper © 2024</p>
+            </div>
+        </div>
+        
+        <script src="scripts/nav-script.js" defer></script>
+        <script src="scripts/bg.js" defer></script>
+        <script src="scripts/downButton.js" defer ></script>
+    </body>
+</html>
